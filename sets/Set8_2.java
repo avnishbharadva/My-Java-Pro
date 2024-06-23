@@ -19,7 +19,42 @@ public class Set8_2 {
             int a2[][] = new int[r2][c2]; 
             int a3[][] = new int[r1][c1];
 
-            System.out.println();
+            System.out.println("Matrix 1\n");
+            for(int i=0;i<r1;i++)
+            {
+                for(int j=0;j<c1;j++)
+                {
+                    System.out.print("Enter value for " + i + " : ");
+                    a1[i][j] = sc.nextInt();
+                }
+            }
+            System.out.println("Matrix 2\n");
+            for(int i=0;i<r2;i++)
+            {
+                for(int j=0;j<c2;j++)
+                {
+                    System.out.print("Enter value for " + i + " : ");
+                    a2[i][j] = sc.nextInt();
+                }
+            }
+            for(int i=0;i<r1;i++)
+            {
+                for(int j=0;j<c2;j++)
+                {
+                    a3[i][j] = a1[i][j] + a2[i][j];
+                }
+            }
+
+            System.out.println("Addition of Matrix\n");
+
+            for(int i=0;i<r1;i++)
+            {
+                for(int j=0;j<c2;j++)
+                {
+                    System.out.print(a3[i][j] + " ");
+                }
+                System.out.println();
+            }
         }
         else
         {
