@@ -29,8 +29,8 @@ public class Login {
                     int count = 3;
                     for(int i=1;i<=3;i++)
                     {
-                        System.out.println("Enter password : ");
-                        String ps = sc.nextLine();
+                        System.out.print("Enter password : ");
+                        String ps = sc.next();
 
                         if(ps.equals("avnish18"))
                         {
