@@ -7,19 +7,20 @@ class Outer
         System.out.println("Outer data : " + a);
     }
 
-    class Inner
+    static class Inner
     {
+        int b = 100;
         void test()
         {
-            System.out.println("Inner class method with data : " + a);
+            System.out.println("Inner class method with data : " + a + " , " + b);
         }
     }
 }
 public class InnerclassEx {
     public static void main(String[] args) {
 
-        Outer.Inner obj = new Outer().new Inner();
-
+        // Outer o = new Outer();
+        Outer.Inner obj = new Outer.Inner();
         obj.test();
     }
 }
