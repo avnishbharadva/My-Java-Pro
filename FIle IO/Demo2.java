@@ -35,5 +35,9 @@ public class Demo2
         p2.on();
         p2.showTime();
         // p2.music(); 
+
+        System.out.println("106%11 : " + (106%11));
+        System.out.println("11%106 : " + (11%106));
+        System.out.println("12%10 : " + (12%10));
     }
 }
