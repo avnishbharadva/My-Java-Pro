@@ -24,7 +24,7 @@ class Test implements Drawable
         msg();
     }
 }
-public class StaticMethInter {
+public class StaticMethInter { 
     public static void main(String[] args) {
         System.out.println(Drawable.cube(3));
         Test obj = new Test();
