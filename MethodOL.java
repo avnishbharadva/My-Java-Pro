@@ -7,6 +7,13 @@ public class MethodOL {
         this.b = b;
     }
 
+    final void sum(int a,int b){
+        System.out.println("sum : " + (a+b));
+    }
+    // int sum(int a,int b){
+    //     int c = a+b;
+    //     return c;
+    // }
     boolean eqauls(MethodOL obj)
     {
         if(this.a==obj.a && this.b==obj.b)
